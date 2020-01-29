@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const Form = ({ onSubmit, onChange }) => (
   <form onSubmit={onSubmit}>
@@ -15,7 +16,8 @@ const Form = ({ onSubmit, onChange }) => (
     <input type="text" onChange={onChange} name="adverb2" placeholder="adverb" />
     <input type="text" onChange={onChange} name="verb3" placeholder="verb, past tense" />
     <input type="text" onChange={onChange} name="adjective4" placeholder="adjective" />
-    <button>Create Madlib</button>
+    <Button label='Create Madlib' type='submit' />
+    <Button label='Reset Form' type='reset'/>
   </form>
 );
 
