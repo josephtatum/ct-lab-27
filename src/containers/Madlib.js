@@ -17,7 +17,7 @@ export default class Madlib extends Component{
     verb3: '',
     adverb1: '',
     adverb2: '',
-    words: [],
+    words: []
   }
 
   toggleResult = () =>
@@ -29,7 +29,7 @@ export default class Madlib extends Component{
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
+    this.setState(state => ({ words: [state.adjective1, state.adjective2, state.adjective3, state.adjective4, state.noun1, state.noun2, state.noun3, state.verb1, state.verb2, state.verb3, state.adverb1, state.adverb2] }));
     this.toggleResult();
   }
 
