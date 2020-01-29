@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Form = ({ onSubmit }) => (
+const Form = ({ onSubmit, onChange }) => (
   <form onSubmit={onSubmit}>
-    <input type="text" placeholder="adjective" />
-    <input type="text" placeholder="noun" />
-    <input type="text" placeholder="verb, past tense" />
-    <input type="text" placeholder="adverb" />
-    <input type="text" placeholder="adjective" />
-    <input type="text" placeholder="noun" />
-    <input type="text" placeholder="noun" />
-    <input type="text" placeholder="adjective" />
-    <input type="text" placeholder="verb" />
-    <input type="text" placeholder="adverb" />
-    <input type="text" placeholder="verb, past tense" />
-    <input type="text" placeholder="adjective" />
+    <input type="text" onChange={onChange} name="adjective1" placeholder="adjective" />
+    <input type="text" onChange={onChange} name="noun1" placeholder="noun" />
+    <input type="text" onChange={onChange} name="verb1" placeholder="verb, past tense" />
+    <input type="text" onChange={onChange} name="adverb1" placeholder="adverb" />
+    <input type="text" onChange={onChange} name="adjective2" placeholder="adjective" />
+    <input type="text" onChange={onChange} name="noun2" placeholder="noun" />
+    <input type="text" onChange={onChange} name="noun3" placeholder="noun" />
+    <input type="text" onChange={onChange} name="adjective3" placeholder="adjective" />
+    <input type="text" onChange={onChange} name="verb2" placeholder="verb" />
+    <input type="text" onChange={onChange} name="adverb2" placeholder="adverb" />
+    <input type="text" onChange={onChange} name="verb3" placeholder="verb, past tense" />
+    <input type="text" onChange={onChange} name="adjective4" placeholder="adjective" />
     <button>Create Madlib</button>
   </form>
 );
