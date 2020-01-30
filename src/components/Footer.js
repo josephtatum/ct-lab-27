@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const Footer = (props) => {
-  return <footer>You must play it.</footer>;
+  return <footer>Thanks For Playing!</footer>;
 };
 
 export default Footer;

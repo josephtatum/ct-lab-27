@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import styles from './madlib.css';
 
 const Form = ({ onSubmit, onChange }) => (
   <form onSubmit={onSubmit}>
@@ -16,8 +17,10 @@ const Form = ({ onSubmit, onChange }) => (
     <input type="text" onChange={onChange} name="adverb2" placeholder="adverb" />
     <input type="text" onChange={onChange} name="verb3" placeholder="verb, past tense" />
     <input type="text" onChange={onChange} name="adjective4" placeholder="adjective" />
-    <Button label='Create Madlib' type='submit' />
-    <Button label='Reset Form' type='reset'/>
+    <div className={styles['button-container'] }>
+      <Button className='submit-button' label='Create Madlib' type='submit' />
+      <Button className='reset-button' label='Reset Form' type='reset'/>
+    </div>
   </form>
 );
 

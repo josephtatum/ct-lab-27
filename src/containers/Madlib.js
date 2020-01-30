@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Form from '../components/madlib/Form';
 import Result from '../components/madlib/Result';
-
 export default class Madlib extends Component{
   state = {
     showResult: false,
